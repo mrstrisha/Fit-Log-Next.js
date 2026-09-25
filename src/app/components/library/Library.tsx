@@ -11,7 +11,7 @@ const Library = async () => {
     return (
         <div>
             The Library
-            <div className="grid grid-cols-3 gap-6">
+            <div className="grid grid-cols-3 gap-6 container mx-auto">
              {
         libraryData.map((library) => (
          <LibraryCard key={library.id} library={library}></LibraryCard>

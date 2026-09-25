@@ -1,9 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 
     const LibraryCard = ({ library }) => {
   return (
+    <Link href={`/libraryDetail/${library.id}`}>
     <div className="w-full max-w-sm overflow-hidden rounded-2xl border border-gray-800 bg-[#15171c] text-white ">
       
       {/* Image */}
@@ -29,15 +31,17 @@ import Image from "next/image";
           </span>
         </div>
 
-        {/* Title */}
+       
         <h2 className="text-lg font-bold uppercase">
-          {library.title}
+          {library.equipment}
         </h2>
 
-        {/* Subtitle */}
+    
         <p className="mt-1 text-sm text-gray-400">
-          {library.subtitle}
+          {library.description}
         </p>
+
+
 
         {/* Divider */}
         <div className="my-4 border-t border-gray-800"></div>
@@ -51,6 +55,7 @@ import Image from "next/image";
 
       </div>
     </div>
+    // </Link>
   );
 };
 
