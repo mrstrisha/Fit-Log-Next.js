@@ -3,6 +3,7 @@
 import { useContext } from "react";
 
 
+
 import { libraryContext } from "@/context/libraryContext";
 import LibraryCard from "../components/library/LibraryCard";
 import OneColumnCard from "../components/library/OneColumnCard";
@@ -13,8 +14,17 @@ const MyPlan = () => {
   console.log(addToTodaysPlan, saveForLater);
 
   return (
-    <div>
-      <div className="tabs tabs-border">
+
+
+
+
+
+
+
+
+
+
+    <div className="tabs tabs-border">
         
         {/* Today's Plan */}
         <input
@@ -52,7 +62,7 @@ const MyPlan = () => {
         </div>
 
       </div>
-    </div>
+   
   );
 };
 
