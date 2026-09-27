@@ -2,6 +2,7 @@
 
 import { libraryContext } from "@/context/libraryContext";
 import { useContext } from "react";
+import { toast } from "react-toastify";
 
 
 const SaveForLater = ({ LibraryDetail }) => {
@@ -13,7 +14,7 @@ const SaveForLater = ({ LibraryDetail }) => {
       LibraryDetail,
     ]);
 
-    alert(`"${LibraryDetail.libraryName}" saved for later`);
+   toast.success(`"${Library.libraryName}" saved for later`);
   };
 
   return (

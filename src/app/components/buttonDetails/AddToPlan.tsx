@@ -2,6 +2,7 @@
 
 import { libraryContext } from "@/context/libraryContext";
 import { useContext } from "react";
+import { toast } from "react-toastify";
 
 
 const AddToPlan = ({ LibraryDetail }) => {
@@ -13,7 +14,7 @@ const AddToPlan = ({ LibraryDetail }) => {
       LibraryDetail,
     ]);
 
-    alert(`You have added "${LibraryDetail.libraryName}" to today's plan`);
+   toast.success(`You have added "${LibraryDetail.libraryName}" to today's plan`);
   };
 
   return (
