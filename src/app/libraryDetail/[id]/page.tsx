@@ -1,3 +1,5 @@
+import AddToPlan from "@/app/components/buttonDetails/AddToPlan";
+import SaveForLater from "@/app/components/buttonDetails/SaveForLater";
 import Image from "next/image";
 
 
@@ -187,13 +189,8 @@ const LibraryDetail = async ({ params }: ILibraryDetailsPageProps) => {
 
             <div className="flex gap-3 mt-6">
 
-              <button className="bg-lime-400 text-black px-4 py-2 text-sm font-medium">
-                Add to today's plan
-              </button>
-
-              <button className="border border-gray-600 px-4 py-2 text-sm text-gray-300">
-                Save for later
-              </button>
+         <AddToPlan LibraryDetail={library} />
+         <SaveForLater LibraryDetail={library}  ></SaveForLater>
 
             </div>
 

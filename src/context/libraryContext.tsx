@@ -3,7 +3,7 @@
 import { createContext, ReactNode, useState } from "react";
 
 
-const libraryContext = createContext({});
+ export const libraryContext = createContext({});
 
 const LibraryProvider = ({ children }: { children: ReactNode }) => {
   const [addToTodaysPlan, setAddToTodaysPlan] = useState([]);
