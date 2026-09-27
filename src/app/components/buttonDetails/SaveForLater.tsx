@@ -14,7 +14,7 @@ const SaveForLater = ({ LibraryDetail }) => {
       LibraryDetail,
     ]);
 
-   toast.success(`"${Library.libraryName}" saved for later`);
+   toast.success(`"${LibraryDetail.libraryName}" saved for later`);
   };
 
   return (
@@ -24,6 +24,8 @@ const SaveForLater = ({ LibraryDetail }) => {
     >
       Save for later
     </button>
+
+ 
   );
 };
 

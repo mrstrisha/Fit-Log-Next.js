@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useContext } from "react";
 import { usePathname } from "next/navigation";
 import { libraryContext } from "@/context/libraryContext";
+import Image from "next/image";
 
 
 const Navbar = () => {
@@ -18,7 +19,12 @@ const Navbar = () => {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-lime-400 text-xl">⚡</span>
+                  <Image
+            src="/logo.png"
+            alt="Fitness banner"
+            width={32}
+            height={32}
+          />
 
           <span className="text-white font-bold">
             FITLOG

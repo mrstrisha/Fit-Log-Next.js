@@ -190,7 +190,7 @@ const LibraryDetail = async ({ params }: ILibraryDetailsPageProps) => {
             <div className="flex gap-3 mt-6">
 
          <AddToPlan LibraryDetail={library} />
-         <SaveForLater LibraryDetail={library}  ></SaveForLater>
+       <SaveForLater LibraryDetail={library} />
 
             </div>
 

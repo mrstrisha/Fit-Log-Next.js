@@ -55,7 +55,7 @@ import Link from "next/link";
 
       </div>
     </div>
-    // </Link>
+     </Link>
   );
 };
 

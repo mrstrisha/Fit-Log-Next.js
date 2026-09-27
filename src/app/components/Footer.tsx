@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const Footer = () => {
   return (
     <footer className="bg-[#0d0d0f] border-t border-[#242426]">
@@ -5,7 +7,13 @@ const Footer = () => {
 
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <span className="text-lime-400 text-sm">✚</span>
+          {/* <span className="text-lime-400 text-sm">✚</span> */}
+         <Image
+  src="/logo.png"
+  alt="Fitness banner"
+  width={32}
+  height={32}
+/>
           <span className="text-white text-xs font-bold">
             FITLOG
           </span>
