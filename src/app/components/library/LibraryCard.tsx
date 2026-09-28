@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Library as LibraryType } from "@/context/libraryContext";
 
 
-
-    const LibraryCard = ({ library }) => {
+  const LibraryCard = ({ library }: { library: LibraryType }) => {
   return (
     <Link href={`/libraryDetail/${library.id}`}>
     <div className="w-full max-w-sm overflow-hidden rounded-2xl border border-gray-800 bg-[#15171c] text-white ">

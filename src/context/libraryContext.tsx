@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { createContext, ReactNode, useState } from "react";
 
@@ -32,12 +32,9 @@ export const libraryContext = createContext<LibraryContextType>({
   setSaveForLater: () => {},
 });
 
-
- export const libraryContext = createContext({});
-
 const LibraryProvider = ({ children }: { children: ReactNode }) => {
-  const [addToTodaysPlan, setAddToTodaysPlan] = useState([]);
-  const [saveForLater, setSaveForLater] = useState([]);
+  const [addToTodaysPlan, setAddToTodaysPlan] = useState<Library[]>([]);
+  const [saveForLater, setSaveForLater] = useState<Library[]>([]);
 
   const sharedData = {
     addToTodaysPlan,

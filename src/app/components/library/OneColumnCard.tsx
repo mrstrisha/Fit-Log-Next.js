@@ -1,8 +1,9 @@
 
 
 import Image from "next/image";
+import { Library as LibraryType } from "@/context/libraryContext";
 
-const OneColumnCard = ({ library }) => {
+const OneColumnCard = ({ library }: { library: LibraryType }) => {
   return (
     <div className="w-full border border-gray-800 rounded-xl p-4 flex gap-4 bg-[#111113]">
       
