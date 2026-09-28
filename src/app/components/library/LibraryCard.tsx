@@ -11,7 +11,7 @@ import { Library as LibraryType } from "@/context/libraryContext";
       {/* Image */}
       <Image
         src={library.image}
-        alt={library.title}
+    alt={library.libraryName}
         width={800}
         height={600}
         className="h-44 w-full object-cover"
@@ -49,7 +49,7 @@ import { Library as LibraryType } from "@/context/libraryContext";
         {/* Info */}
         <div className="flex gap-4 text-xs text-gray-400">
           <span>◷ {library.duration} min</span>
-          <span>🔥 {library.calories} kcal</span>
+          <span>🔥 {library.caloriesBurned} kcal</span>
           <span>☆ {library.rating}</span>
         </div>
 

@@ -3,9 +3,10 @@
 import { libraryContext } from "@/context/libraryContext";
 import { useContext } from "react";
 import { toast } from "react-toastify";
+import { Library } from "@/context/libraryContext";
 
 
-const SaveForLater = ({ LibraryDetail }) => {
+const SaveForLater = ({ LibraryDetail }: { LibraryDetail: Library }) => {
   const { saveForLater, setSaveForLater } = useContext(libraryContext);
 
   const handleSaveForLater = () => {

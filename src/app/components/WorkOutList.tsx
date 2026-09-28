@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import LibraryCard from "../components/library/LibraryCard";
+import { Library as LibraryType } from "@/context/libraryContext";
 
-const WorkoutList = ({ libraries }) => {
+const WorkoutList = ({ libraries }: { libraries: LibraryType[] }) => {
   const [sortBy, setSortBy] = useState("duration");
 
   const sortedLibraries = [...libraries].sort((a, b) => {

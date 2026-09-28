@@ -10,7 +10,7 @@ const OneColumnCard = ({ library }: { library: LibraryType }) => {
       {/* Image */}
 <Image
   src={library.image}
-  alt={library.name}
+  alt={library.libraryName}
   className="object-cover rounded-lg"
   height={400}
   width={400}
@@ -20,7 +20,7 @@ const OneColumnCard = ({ library }: { library: LibraryType }) => {
       {/* Content */}
       <div className="flex-1">
         <h2 className="text-white text-lg font-semibold">
-          {library.name}
+       {library.libraryName}
         </h2>
 
         <p className="text-gray-400 text-sm mt-1">
